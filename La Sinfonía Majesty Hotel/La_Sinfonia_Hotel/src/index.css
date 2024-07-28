@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-38,
+  .btn-38 *,
+  .btn-38 :after,
+  .btn-38 :before,
+  .btn-38:after,
+  .btn-38:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-38 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #fbfbfb;
+    background-image: none;
+    color: #000000;
+    cursor: pointer;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Helvetica Neue,
+      Arial,
+      Noto Sans,
+      sans-serif,
+      Apple Color Emoji,
+      Segoe UI Emoji,
+      Segoe UI Symbol,
+      Noto Color Emoji;
+    font-size: 80%;
+    font-weight: 0;
+    line-height: 1;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+  }
+  .btn-38:disabled {
+    cursor: default;
+  }
+  .btn-38:-moz-focusring {
+    outline: auto;
+  }
+  .btn-38 svg {
+    display: block;
+    vertical-align: middle;
+  }
+  .btn-38 [hidden] {
+    display: none;
+  }
+  .btn-38 {
+    border: 1px solid;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    padding: 1.1rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .btn-38 .new,
+  .btn-38 .old span {
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  .btn-38 .new {
+    display: block;
+    transform: scale(0);
+  }
+  .btn-38:hover .new {
+    transform: scale(1);
+    text-align: center;
+  }
+  .btn-38 .old,
+  .btn-38 .old span {
+    inset: 0;
+    position: absolute;
+  }
+  .btn-38 .old span {
+    background: #221e1e;
+    color: #fffcfc;
+    display: block;
+    display: grid;
+    place-items: center;
+  }
+  .btn-38 .old span:first-child {
+    -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+    clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+  }
+  .btn-38 .old span:nth-child(2) {
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+  .btn-38:hover .old span:first-child {
+    transform: translateX(-100%);
+  }
+  .btn-38:hover .old span:nth-child(2) {
+    transform: translateX(100%);
+  }
+
+  .btn-98,
+  .btn-98 *,
+  .btn-98 :after,
+  .btn-98 :before,
+  .btn-98:after,
+  .btn-98:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-96,
+  .btn-96 *,
+  .btn-96 :after,
+  .btn-96 :before,
+  .btn-96:after,
+  .btn-96:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-96 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #000000;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #000000;
+    font-size: 80%;
+
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+  }
+  .btn-96:disabled {
+    cursor: default;
+  }
+  .btn-96:-moz-focusring {
+    outline: auto;
+  }
+  .btn-96 svg {
+    display: block;
+    vertical-align: middle;
+  }
+  .btn-96 [hidden] {
+    display: none;
+  }
+  .btn-96 {
+    box-sizing: border-box;
+    display: block;
+    font-weight: 600;
+    -webkit-mask-image: none;
+    padding: 0.25rem 1rem;
+    perspective: 800px;
+    position: relative;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+  }
+  .btn-96 span {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-items: center;
+    position: absolute;
+    transform: rotateX(0deg);
+    transform-origin: top center;
+    transition: 0.1s;
+  }
+  .btn-96:hover span {
+    transform: rotateX(35deg);
+  }
+  .btn-96:after,
+  .btn-96:before {
+    background: #ffffff;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotateX(0deg);
+    width: 100%;
+    z-index: -1;
+  }
+  .btn-96:hover {
+    color: white;
+  }
+  .btn-96:after {
+    background: #000000;
+
+    width: 0;
+  }
+  .btn-96:hover:after {
+    -webkit-animation: progress-bar 1.2s;
+    animation: progress-bar 1.2s;
+  }
+  @-webkit-keyframes progress-bar {
+    0% {
+      opacity: 1;
+      width: 0;
+    }
+    10% {
+      opacity: 1;
+      width: 15%;
+    }
+    25% {
+      opacity: 1;
+      width: 25%;
+    }
+    40% {
+      opacity: 1;
+      width: 35%;
+    }
+    55% {
+      opacity: 1;
+      width: 75%;
+    }
+    60% {
+      opacity: 1;
+      width: 100%;
+    }
+    to {
+      opacity: 0;
+      width: 100%;
+    }
+  }
+  @keyframes progress-bar {
+    0% {
+      opacity: 1;
+      width: 0;
+    }
+    10% {
+      opacity: 1;
+      width: 15%;
+    }
+    25% {
+      opacity: 1;
+      width: 25%;
+    }
+    40% {
+      opacity: 1;
+      width: 35%;
+    }
+    55% {
+      opacity: 1;
+      width: 75%;
+    }
+    60% {
+      opacity: 1;
+      width: 100%;
+    }
+    to {
+      opacity: 0;
+      width: 100%;
+    }
+  }
+  .custom-height {
+    height: calc(100% + 360px);
+  }
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.primary.200");
+    border-right-color: theme("colors.primary.900");
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.100");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  .separator {
+    position: relative;
+  }
+  .separator::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: goldenrod;
+    border-radius: 50%;
+  }
+}
