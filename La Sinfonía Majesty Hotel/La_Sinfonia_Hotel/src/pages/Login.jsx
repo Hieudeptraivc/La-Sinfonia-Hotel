@@ -30,7 +30,7 @@ function Login() {
             className={`${user?.username ? `pb-0 ` : "pb-12"} text-xl sm:text-2xl lg:text-4xl`}
           >
             <p className="font-semibold font-playfair">
-              {user?.username ? `Welcome, ${user.username}` : "Login"}
+              {user?.username ? `Welcome, ${user.username}` : `${isOpen ? "Login" : "Register"}`}
             </p>
             <p className="pt-6 text-base lg:text-2xl sm:text-xl font-jacques">
               Start to experience luxury redefined
