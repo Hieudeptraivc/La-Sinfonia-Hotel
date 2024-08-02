@@ -58,6 +58,8 @@ function CreateBooking({ room }) {
       data: {
         guestId,
         room: id,
+        dateStart: data1.dateStart.setDate(data1.dateStart.getDate() + 1),
+        dateEnd: data1.dateEnd.setDate(data1.dateEnd.getDate() + 1),
         ...data1,
         kids: Number(data1.kids),
         adults: Number(data1.adults),
