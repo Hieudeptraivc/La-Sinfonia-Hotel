@@ -33,12 +33,12 @@ export async function getBookings({ userId, filter, sortBy, page }) {
   if (data?.error) throw new Error(data?.error.message);
   return data;
 }
-export async function getBookingsByRoom({ roomId }) {
-  const today = new Date().toISOString();
+export async function getBookingsByRoom({ roomId, dateStart }) {
+  const day = new Date(dateStart).toISOString();
   const authToken = getToken();
   if (!authToken) return null;
   const response = await fetch(
-    `${API}/bookings?filters[room][$eq]=${roomId}&filters[dateEnd][$gte]=${today}}`,
+    `${API}/bookings?filters[room][$eq]=${roomId}&filters[dateEnd][$gte]=${day}}`,
     {
       headers: { Authorization: `${BEARER} ${authToken}` },
     }
