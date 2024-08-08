@@ -49,7 +49,7 @@ function CreateBooking({ room }) {
     onError: (err) => toast.error(err.message),
   });
 
-  const { bookingCheck } = useCheckAvailable(id);
+  const { bookingCheck } = useCheckAvailable(id,dateStart);
   // function onError(errors) {
   //   // console.log(errors);
   // }
